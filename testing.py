@@ -15,21 +15,21 @@ import argparse
 
 
 
-# argparse = argparse.ArgumentParser()
-# argparse.add_argument("-ep", "--epochs", required=True)
-# argparse.add_argument("-batch", "--batch_size", required=True)
-# argparse.add_argument("-emo", "--emo_attr", required=True)
-# args = vars(argparse.parse_args())
-
-# # Parameters
-# epochs = int(args['epochs'])
-# batch_size = int(args['batch_size'])
-# emo_attr = args['emo_attr']
+argparse = argparse.ArgumentParser()
+argparse.add_argument("-ep", "--epochs", required=True)
+argparse.add_argument("-batch", "--batch_size", required=True)
+argparse.add_argument("-emo", "--emo_attr", required=True)
+args = vars(argparse.parse_args())
 
 # Parameters
-epochs = 30
-emo_attr = 'Val'
-batch_size = 128
+epochs = int(args['epochs'])
+batch_size = int(args['batch_size'])
+emo_attr = args['emo_attr']
+
+# # Parameters
+# epochs = 30
+# emo_attr = 'Val'
+# batch_size = 128
 
 # Data/Label Dir
 label_dir = '/media/winston/UTD-MSP/Speech_Datasets/MSP-PODCAST-Publish-1.6/Labels/labels_concensus.csv'

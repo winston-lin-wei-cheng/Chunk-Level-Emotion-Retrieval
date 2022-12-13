@@ -25,18 +25,20 @@ class LSTMnet_ranker(torch.nn.Module):
         self.fc2 = nn.Linear(self.hidden_dim, self.output_dim) 
               
     def forward(self, inputs1, inputs2):
-        # LSTM-info flow
-        lstm_out1, _ = self.lstm(inputs1) 
+        # LSTM-info flow (data1)
+        lstm_out1, _ = self.lstm(inputs1)
         # FC output1
         outputs1 = self.fc1(lstm_out1[:,-1,:])
         outputs1 = F.relu(outputs1)
         outputs1 = self.fc2(outputs1)
-        # LSTM-info flow
-        lstm_out2, _ = self.lstm(inputs2) 
+
+        # LSTM-info flow (data2)
+        lstm_out2, _ = self.lstm(inputs2)
         # FC output2
         outputs2 = self.fc1(lstm_out2[:,-1,:])
         outputs2 = F.relu(outputs2)
-        outputs2 = self.fc2(outputs2)        
+        outputs2 = self.fc2(outputs2)
+        
         out = outputs1-outputs2
         return out
 

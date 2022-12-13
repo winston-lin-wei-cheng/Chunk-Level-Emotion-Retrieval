@@ -1,5 +1,5 @@
-# Chunk-Emotion-Retrieval for Seq2Seq SER
-This is a Pytorch implementation of the paper: [Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion](https://ieeexplore.ieee.org/XXX). The experiments and trained models were based on the MSP-Podcast v1.6 corpus in the paper.
+# Chunk-Level-Emotion-Retrieval for Seq2Seq SER
+This is a Pytorch implementation of the paper: [Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion](https://ieeexplore.ieee.org/XXX). The experiments and trained models were based on the MSP-Podcast v1.6 corpus & LLDs features in the paper.
 
 ![The procedure of retrieving chunk-level local emotions by emo-rankers](/images/framework.png)
 
@@ -62,14 +62,14 @@ If you use this code, please cite the following paper:
 Wei-Cheng Lin and Carlos Busso, "Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion"
 
 ```
-@article{Lin_202x,
+@article{Lin_202x_2,
     author={W.-C. Lin and C. Busso},
     title={Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion},
-    journal={IEEE Transactions on Affective Computing},
+    journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
     number={XXX},
     volume={XXX},
   pages={XXX},
-  year={XXX},
+  year={2023},
   month={XXX},
     doi={XXX},
 } 

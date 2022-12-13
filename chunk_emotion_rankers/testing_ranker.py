@@ -22,23 +22,25 @@ np.random.seed(seed)
 
 
 
-# argparse = argparse.ArgumentParser()
-# argparse.add_argument("-ep", "--epochs", required=True)
-# argparse.add_argument("-batch", "--batch_size", required=True)
-# argparse.add_argument("-emo", "--emo_attr", required=True)
-# args = vars(argparse.parse_args())
-
-# # Parameters
-# epochs = int(args['epochs'])
-# batch_size = int(args['batch_size'])
-# emo_attr = args['emo_attr']
+argparse = argparse.ArgumentParser()
+argparse.add_argument("-ep", "--epochs", required=True)
+argparse.add_argument("-batch", "--batch_size", required=True)
+argparse.add_argument("-emo", "--emo_attr", required=True)
+args = vars(argparse.parse_args())
 
 # Parameters
-epochs = 20
-batch_size = 128
-emo_attr = 'Dom'
+epochs = int(args['epochs'])
+batch_size = int(args['batch_size'])
+emo_attr = args['emo_attr']
 rdn_ratio = 0.1
 resample = 10
+
+# # Parameters
+# epochs = 20
+# batch_size = 128
+# emo_attr = 'Dom'
+# rdn_ratio = 0.1
+# resample = 10
 
 # LSTM-model loading
 MODEL_PATH = './trained_ranker_model_v1.6/LSTM_epoch'+str(epochs)+'_batch'+str(batch_size)+'_'+emo_attr+'_ranker.pth.tar'

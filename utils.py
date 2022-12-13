@@ -193,7 +193,10 @@ def generate_chunk_EmoSeq(mu, std, rank_seq):
         # re-scale to original mean/std
         mu2 = np.mean(chunk_trend_seq)
         std2 = np.std(chunk_trend_seq)
-        chunk_trend_seq = mu + (chunk_trend_seq-mu2)*(std/std2)
+        if std2!=0:
+            chunk_trend_seq = mu + (chunk_trend_seq-mu2)*(std/std2)
+        else:
+            chunk_trend_seq = np.array([mu]*len(rank_seq))
     else:
         chunk_trend_seq = np.array([mu]*len(rank_seq))
     return chunk_trend_seq
