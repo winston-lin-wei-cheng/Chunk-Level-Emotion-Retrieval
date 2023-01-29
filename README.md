@@ -63,14 +63,14 @@ Wei-Cheng Lin and Carlos Busso, "Sequential Modeling by Leveraging Non-Uniform D
 
 ```
 @article{Lin_202x_2,
-    author={W.-C. Lin and C. Busso},
-    title={Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion},
-    journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-    number={},
-    volume={To appear},
-  pages={},
-  year={2023},
-  month={},
-    doi={},
-} 
+ 	author = {W.-C. Lin and C. Busso},
+	title = {Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion},
+	journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+	volume = {To appear},
+	number = {},
+	year = {2023},
+	pages = {},
+ 	month = {},
+ 	doi={},
+}
 ```
