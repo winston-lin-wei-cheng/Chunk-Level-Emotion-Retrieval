@@ -1,5 +1,5 @@
 # Chunk-Level-Emotion-Retrieval for Seq2Seq SER
-This is a Pytorch implementation of the paper: [Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion](https://ieeexplore.ieee.org/XXX). The experiments and trained models were based on the MSP-Podcast v1.6 corpus & LLDs features in the paper.
+This is a Pytorch implementation of the paper: [Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion](https://ieeexplore.ieee.org/abstract/document/10043704). The experiments and trained models were based on the MSP-Podcast v1.6 corpus & LLDs features in the paper.
 
 ![The procedure of retrieving chunk-level local emotions by emo-rankers](/images/framework.png)
 
@@ -46,7 +46,7 @@ python training.py -ep 30 -batch 128 -emo Val
 python testing.py -ep 30 -batch 128 -emo Val
 ```
 
-We also provide the trained models in the *'trained_seq2seq_model_v1.6'*.The CCC performances of models based on the test set are shown in the following table. Note that the results are slightly different from the [paper](https://ieeexplore.ieee.org/XXX) since we performed statistical test in the paper (i.e., we averaged multiple trails results together).
+We also provide the trained models in the *'trained_seq2seq_model_v1.6'*.The CCC performances of models based on the test set are shown in the following table. Note that the results are slightly different from the [paper](https://ieeexplore.ieee.org/abstract/document/10043704) since we performed statistical test in the paper (i.e., we averaged multiple trails results together).
 
 |  | Aro. | Dom. | Val. |
 |:----------------:|:----------------:|:----------------:|:----------------:|
@@ -66,7 +66,7 @@ Wei-Cheng Lin and Carlos Busso, "Sequential Modeling by Leveraging Non-Uniform D
  	author = {W.-C. Lin and C. Busso},
 	title = {Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion},
 	journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-	volume = {To appear},
+	volume = {Early Access},
 	number = {},
 	year = {2023},
 	pages = {},
