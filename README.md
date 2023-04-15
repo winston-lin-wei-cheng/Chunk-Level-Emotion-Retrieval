@@ -62,15 +62,15 @@ If you use this code, please cite the following paper:
 Wei-Cheng Lin and Carlos Busso, "Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion"
 
 ```
-@article{Lin_202x_2,
+@article{Lin_2023_2,
  	author = {W.-C. Lin and C. Busso},
 	title = {Sequential Modeling by Leveraging Non-Uniform Distribution of Speech Emotion},
 	journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-	volume = {Early Access},
+	volume = {31},
 	number = {},
 	year = {2023},
-	pages = {},
- 	month = {},
- 	doi={},
+	pages = {1087-1099},
+ 	month = {February},
+ 	doi={10.1109/TASLP.2023.3244527},
 }
 ```
